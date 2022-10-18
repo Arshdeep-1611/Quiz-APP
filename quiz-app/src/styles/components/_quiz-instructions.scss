@@ -1,0 +1,60 @@
+.instructions {
+    border: 1px solid darken($off-white, 10%);
+    border-radius: 5px;
+    margin-top: $lg;
+    margin-bottom: $lg;
+    padding: $sm $lg;
+    width: 200vh;
+    margin: auto;
+    
+
+    h1 {
+        color: $off-black;
+        font-size: $md;
+        text-align: center;
+    }
+
+    .lifeline {
+        position: relative;
+        top: -3px;
+    }
+
+    .lifeline-icon {
+        color: $green;
+        cursor: pointer;
+    }
+
+    .browser-default {
+        padding-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    img {
+        width: 80%;
+        height: 50%;
+        margin: 20px;
+    }
+     .left{
+        margin: 20px;
+        text-decoration: none;
+        background-color: royalblue;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+     }
+     .right{
+        background-color: royalblue;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+     }
+} 
+
+@media (max-width: $md-breakpoint) {
+    .instructions img {
+        width: 100% !important;
+        height: 150% !important;
+    }
+}

@@ -1,0 +1,97 @@
+#home{
+    background-image: url('../../assets/img/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    color: white;
+    padding-left: 0%;
+    padding-right: 0%;
+    section {
+        margin-top: 30px;
+        background-color: rgba(0 ,0 ,0 ,0.7);
+        padding-left: $md;
+        padding-right: $md;
+        height: 80%;
+        width: 35%;
+        border-radius: 20px;
+    }
+    img {
+        height: 8rem;
+        border-radius: 50%;
+        margin-top: 20px;
+        // margin-left: 195px;
+    }
+    h1{
+        margin-top: 100px;
+        font-size: $lg;
+        text-align: center;
+        color: $off-white;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+    }
+    .play-button{
+        width: 100%;
+        margin-top: 50px;
+        list-style: none;
+    }
+    li{
+        list-style: none;
+    }
+    a.play{
+        background-color: $green;
+        color: white;
+        cursor: pointer;
+        padding: $normal;
+        text-decoration: none;
+        display: block;
+        border-radius: $border-radius;
+        text-align: center;
+        transition: 0.3s linear all;
+        
+
+    }
+    a.play:hover{
+        background-color: darken($green, 10%);
+    }
+    .auth-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: $lg;
+        
+    }
+    #login-button{
+        background-color: red;
+        text-decoration: none;
+    }
+    #reg-button{
+        background-color: royalblue;
+        text-decoration: none;
+    }
+    #login-button:hover{
+        background-color: darken(red, 10%);
+    }
+    #reg-button:hover{
+        background-color: darken(royalblue, 10%);
+    }
+    .auth-container .auth-buttons{
+        color: white;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: 0.3s linear all;
+        padding: $normal 0;
+        text-align: center;
+        width: 45%;
+    }
+}
+@media (max-width : 768px){
+   #home section{
+    padding: 0 $normal;
+    width: 100%;
+    height: 100%;
+   }
+}
